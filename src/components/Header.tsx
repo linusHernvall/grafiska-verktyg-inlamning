@@ -35,7 +35,7 @@ function Header() {
 const headerSx: SxProps = {
   height: "80px",
   width: "100%",
-  border: "2px solid red",
+  // border: "2px solid red",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
@@ -47,7 +47,7 @@ const headerSx: SxProps = {
 const headerContainerSx: SxProps = {
   height: "80px",
   maxWidth: "940px",
-  border: "2px solid green",
+  // border: "2px solid green",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
