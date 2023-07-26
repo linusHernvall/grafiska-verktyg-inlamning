@@ -49,18 +49,15 @@ function OurStory() {
 // CSS ----------------------------------------------
 
 const storySx: SxProps = {
-  height: "425px",
-  //   border: "2px solid green",
   display: "flex",
   justifyContent: "center",
+  marginBottom: "20px",
 };
 
 const storyWrapperSx: SxProps = {
-  height: "425px",
   width: "100%",
   margin: "0 25px",
   maxWidth: "780px",
-  //   border: "2px solid red",
 };
 
 export default OurStory;
