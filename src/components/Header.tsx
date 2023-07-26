@@ -1,13 +1,13 @@
 import MenuIcon from "@mui/icons-material/Menu";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
-import { Box, Container, SxProps } from "@mui/material";
+import { Box, SxProps } from "@mui/material";
 
 function Header() {
   return (
     <div>
       <Box sx={headerSx}>
-        <Container sx={headerContainerSx}>
+        <Box sx={headerContainerSx}>
           <Box>
             <img src="../../images/lhcp-textlogo.png" alt="A text logotype" />
           </Box>
@@ -21,7 +21,7 @@ function Header() {
               <MenuIcon />
             </Box>
           </Box>
-        </Container>
+        </Box>
       </Box>
     </div>
   );
@@ -35,6 +35,7 @@ function Header() {
 const headerSx: SxProps = {
   height: "80px",
   width: "100%",
+  background: "#FFFFFF",
   // border: "2px solid red",
   display: "flex",
   justifyContent: "center",
@@ -46,7 +47,9 @@ const headerSx: SxProps = {
 
 const headerContainerSx: SxProps = {
   height: "80px",
+  width: "100%",
   maxWidth: "940px",
+  margin: "0 25px",
   // border: "2px solid green",
   display: "flex",
   alignItems: "center",
