@@ -1,5 +1,6 @@
 import CelluloidPicks from "./components/CelluloidPicks";
 import CircleLogo from "./components/CircleLogo";
+import DelrinPicks from "./components/DelrinPicks";
 import Description from "./components/Description";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -14,6 +15,7 @@ function App() {
       <CircleLogo />
       <Description />
       <CelluloidPicks />
+      <DelrinPicks />
     </div>
   );
 }

@@ -6,16 +6,16 @@ import {
   useMediaQuery,
 } from "@mui/material";
 
-function CelluloidPicks() {
+function DelrinPicks() {
   const theme = createTheme();
   const isWideScreen = useMediaQuery(theme.breakpoints.up("md"));
 
   return (
     <div>
-      <Box sx={celluloidZone}>
-        <Box sx={celluloidWrapperSx}>
+      <Box sx={delrinZone}>
+        <Box sx={delrinWrapperSx}>
           <Typography sx={{ marginTop: "20px" }} variant="h2">
-            CELLULOID PICKS
+            DELRIN PICKS
           </Typography>
           <Box sx={underlineSx} />
 
@@ -29,8 +29,8 @@ function CelluloidPicks() {
           >
             <Box sx={cardSx}>
               <img
-                src="../../images/standard-white.png"
-                alt="Standard white guitar pick"
+                src="../../images/standard-black.png"
+                alt="Standard black guitar pick"
                 style={{
                   margin: "20px 0 15px",
                   width: "120px",
@@ -41,8 +41,8 @@ function CelluloidPicks() {
             </Box>
             <Box sx={cardSx}>
               <img
-                src="../../images/triangle-black.png"
-                alt="Black triangle guitar pick"
+                src="../../images/triangle-white.png"
+                alt="White triangle guitar pick"
                 style={{
                   margin: "20px 0 15px",
                   width: "136px",
@@ -53,8 +53,8 @@ function CelluloidPicks() {
             </Box>
             <Box sx={cardSx}>
               <img
-                src="../../images/teardrop-white.png"
-                alt="White teardrop guitar pick"
+                src="../../images/teardrop-black.png"
+                alt="Black teardrop guitar pick"
                 style={{
                   margin: "20px 0 15px",
                   width: "120px",
@@ -65,8 +65,8 @@ function CelluloidPicks() {
             </Box>
             <Box sx={cardSx}>
               <img
-                src="../../images/progrip-black.png"
-                alt="Black progrip guitar pick"
+                src="../../images/progrip-white.png"
+                alt="White progrip guitar pick"
                 style={{
                   margin: "20px 0 15px",
                   width: "120px",
@@ -77,8 +77,8 @@ function CelluloidPicks() {
             </Box>
             <Box sx={cardSx}>
               <img
-                src="../../images/pearloid-white.png"
-                alt="White pearloid guitar pick"
+                src="../../images/pearloid-black.png"
+                alt="Black pearloid guitar pick"
                 style={{
                   margin: "20px 0 15px",
                   width: "120px",
@@ -108,13 +108,14 @@ function CelluloidPicks() {
 
 // CSS ----------------------------------------------
 
-const celluloidZone: SxProps = {
+const delrinZone: SxProps = {
   display: "flex",
   justifyContent: "center",
 };
 
-const celluloidWrapperSx: SxProps = {
+const delrinWrapperSx: SxProps = {
   width: "100%",
+  border: "2px solid red",
   margin: "0 25px",
   paddingBottom: "40px",
   maxWidth: "780px",
@@ -141,4 +142,4 @@ const cardSx: SxProps = {
   flexDirection: "column",
 };
 
-export default CelluloidPicks;
+export default DelrinPicks;
