@@ -37,7 +37,7 @@ function OurStory() {
             picks, touching the lives of musicians and music lovers worldwide.
             <br />
             <br />
-            Now is the time for you to take part in this journey and write new
+            Now is the time for you to take part of this journey and write new
             music history with guitar picks from LH Custom Picks.
           </Typography>
         </Box>

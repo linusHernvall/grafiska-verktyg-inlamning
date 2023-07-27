@@ -5,6 +5,7 @@ import Description from "./components/Description";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import OurStory from "./components/OurStory";
+import PriceTable from "./components/PriceTable";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Description />
       <CelluloidPicks />
       <DelrinPicks />
+      <PriceTable />
     </div>
   );
 }

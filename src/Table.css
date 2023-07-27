@@ -1,0 +1,26 @@
+.table {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.header {
+  font-weight: bold;
+  background-color: #f0f0f0;
+}
+
+.cell {
+  width: 140px;
+  height: 80px;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

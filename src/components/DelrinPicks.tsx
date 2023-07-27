@@ -115,7 +115,6 @@ const delrinZone: SxProps = {
 
 const delrinWrapperSx: SxProps = {
   width: "100%",
-  border: "2px solid red",
   margin: "0 25px",
   paddingBottom: "40px",
   maxWidth: "780px",
