@@ -1,7 +1,7 @@
-import { Box, SxProps, useMediaQuery, useTheme } from "@mui/material";
+import { Box, SxProps, createTheme, useMediaQuery } from "@mui/material";
 
 function Hero() {
-  const theme = useTheme();
+  const theme = createTheme();
   const isWideScreen = useMediaQuery(theme.breakpoints.up("xl"));
 
   return (

@@ -1,3 +1,4 @@
+import CelluloidPicks from "./components/CelluloidPicks";
 import CircleLogo from "./components/CircleLogo";
 import Description from "./components/Description";
 import Header from "./components/Header";
@@ -12,6 +13,7 @@ function App() {
       <OurStory />
       <CircleLogo />
       <Description />
+      <CelluloidPicks />
     </div>
   );
 }
