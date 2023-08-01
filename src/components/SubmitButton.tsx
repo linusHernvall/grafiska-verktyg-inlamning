@@ -15,7 +15,6 @@ export default SubmitButton;
 // CSS ----------------------------------------------
 
 const buttonSx: SxProps = {
-  background: "#40128b",
   width: "140px",
   height: "35px",
   marginBottom: "75px",
