@@ -3,6 +3,7 @@ import CircleLogo from "./components/CircleLogo";
 import ContactForm from "./components/ContactForm";
 import DelrinPicks from "./components/DelrinPicks";
 import Description from "./components/Description";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import OurStory from "./components/OurStory";
@@ -22,6 +23,7 @@ function App() {
       <PriceTable />
       <ContactForm />
       <UpperFooter />
+      <Footer />
     </div>
   );
 }

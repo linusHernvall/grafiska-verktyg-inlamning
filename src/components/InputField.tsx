@@ -1,12 +1,7 @@
-import {
-  Button,
-  SxProps,
-  Typography,
-  useMediaQuery,
-  useTheme,
-} from "@mui/material";
+import { SxProps, Typography, useMediaQuery, useTheme } from "@mui/material";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
+import SubmitButton from "./SubmitButton";
 
 export default function InputField() {
   const theme = useTheme();
@@ -64,9 +59,7 @@ export default function InputField() {
         variant="outlined"
         multiline
       />
-      <Button sx={buttonSx} variant="contained">
-        <Typography variant="h3">SUBMIT</Typography>
-      </Button>
+      <SubmitButton />
     </Box>
   );
 }
@@ -80,11 +73,13 @@ const inputFieldWrapperSx: SxProps = {
 
 const topicSx: SxProps = {
   margin: "0 0 5px",
+  fontWeight: "bold",
 };
 
 const inputSx: SxProps = {
   margin: "0 0 20px",
   height: "35px",
+  borderRadius: "50px",
 };
 
 const messageSx: SxProps = {
@@ -92,10 +87,10 @@ const messageSx: SxProps = {
   width: "590px",
 };
 
-const buttonSx: SxProps = {
-  background: "#40128b",
-  borderRadius: "0",
-  width: "140px",
-  height: "35px",
-  marginBottom: "75px",
-};
+// const buttonSx: SxProps = {
+//   background: "#40128b",
+//   borderRadius: "0",
+//   width: "140px",
+//   height: "35px",
+//   marginBottom: "75px",
+// };
