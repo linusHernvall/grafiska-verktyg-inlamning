@@ -1,6 +1,18 @@
-import { Button, SxProps, Typography } from "@mui/material";
+import { Button, SxProps, Typography, useTheme } from "@mui/material";
 
 function SubmitButton() {
+  // CSS ----------------------------------------------
+  const theme = useTheme();
+
+  const buttonSx: SxProps = {
+    width: "140px",
+    height: "35px",
+    marginBottom: "75px",
+    "&:hover": {
+      background: theme.palette.secondary.main,
+    },
+  };
+
   return (
     <div>
       <Button sx={buttonSx} variant="contained">
@@ -11,11 +23,3 @@ function SubmitButton() {
 }
 
 export default SubmitButton;
-
-// CSS ----------------------------------------------
-
-const buttonSx: SxProps = {
-  width: "140px",
-  height: "35px",
-  marginBottom: "75px",
-};
