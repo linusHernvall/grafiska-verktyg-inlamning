@@ -11,6 +11,36 @@ import {
 } from "@mui/material";
 
 function TablePhone() {
+  // CSS ----------------------------------------------
+
+  const priceZoneSx: SxProps = {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+  };
+
+  const tableWrapperSx: SxProps = {
+    margin: "20px 0 10px",
+    width: "440px",
+  };
+
+  const rowLightGraySx: SxProps = {
+    background: "#f9f9f9",
+  };
+
+  const rowDarkGraySx: SxProps = {
+    background: "#f3f3f3",
+  };
+
+  const cellSx: SxProps = {
+    textAlign: "center",
+    height: "80px",
+  };
+
+  const textSx: SxProps = {
+    width: "440px",
+  };
   return (
     <div>
       <Box sx={priceZoneSx}>
@@ -143,36 +173,5 @@ function TablePhone() {
     </div>
   );
 }
-
-// CSS ----------------------------------------------
-
-const priceZoneSx: SxProps = {
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-  alignItems: "center",
-};
-
-const tableWrapperSx: SxProps = {
-  margin: "20px 0 10px",
-  width: "440px",
-};
-
-const rowLightGraySx: SxProps = {
-  background: "#f9f9f9",
-};
-
-const rowDarkGraySx: SxProps = {
-  background: "#f3f3f3",
-};
-
-const cellSx: SxProps = {
-  textAlign: "center",
-  height: "80px",
-};
-
-const textSx: SxProps = {
-  width: "440px",
-};
 
 export default TablePhone;

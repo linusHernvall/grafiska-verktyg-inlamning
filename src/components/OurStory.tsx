@@ -1,6 +1,20 @@
 import { Box, SxProps, Typography } from "@mui/material";
 
 function OurStory() {
+  // CSS ----------------------------------------------
+
+  const storySx: SxProps = {
+    display: "flex",
+    justifyContent: "center",
+    marginBottom: "20px",
+  };
+
+  const storyWrapperSx: SxProps = {
+    width: "100%",
+    margin: "0 25px",
+    maxWidth: "780px",
+  };
+
   return (
     <div>
       <Box sx={storySx}>
@@ -45,19 +59,5 @@ function OurStory() {
     </div>
   );
 }
-
-// CSS ----------------------------------------------
-
-const storySx: SxProps = {
-  display: "flex",
-  justifyContent: "center",
-  marginBottom: "20px",
-};
-
-const storyWrapperSx: SxProps = {
-  width: "100%",
-  margin: "0 25px",
-  maxWidth: "780px",
-};
 
 export default OurStory;

@@ -11,6 +11,37 @@ function Footer() {
   const theme = useTheme();
   const isWideScreen = useMediaQuery(theme.breakpoints.up("md"));
 
+  // CSS ----------------------------------------------
+
+  const footerZoneSx: SxProps = {
+    background: "#000000",
+    display: "flex",
+    justifyContent: "center",
+  };
+
+  const footerWrapperSx: SxProps = {
+    margin: "35px 0",
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "column",
+    maxWidth: "940px",
+  };
+
+  const topicSx: SxProps = {
+    fontWeight: "bold",
+    color: "#FFFFFF",
+  };
+
+  const linkSx: SxProps = {
+    color: "#FFFFFF",
+    cursor: "pointer",
+  };
+
+  const footerRowOneSx: SxProps = {
+    display: "flex",
+    justifyContent: "space-between",
+  };
+
   return (
     <div>
       <Box sx={footerZoneSx}>
@@ -67,36 +98,5 @@ function Footer() {
     </div>
   );
 }
-
-// CSS ----------------------------------------------
-
-const footerZoneSx: SxProps = {
-  background: "#000000",
-  display: "flex",
-  justifyContent: "center",
-};
-
-const footerWrapperSx: SxProps = {
-  margin: "35px 0",
-  display: "flex",
-  justifyContent: "center",
-  flexDirection: "column",
-  maxWidth: "940px",
-};
-
-const topicSx: SxProps = {
-  fontWeight: "bold",
-  color: "#FFFFFF",
-};
-
-const linkSx: SxProps = {
-  color: "#FFFFFF",
-  cursor: "pointer",
-};
-
-const footerRowOneSx: SxProps = {
-  display: "flex",
-  justifyContent: "space-between",
-};
 
 export default Footer;

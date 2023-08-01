@@ -10,6 +10,47 @@ function DelrinPicks() {
   const theme = createTheme();
   const isWideScreen = useMediaQuery(theme.breakpoints.up("md"));
 
+  // CSS ----------------------------------------------
+
+  const delrinZone: SxProps = {
+    display: "flex",
+    justifyContent: "center",
+  };
+
+  const delrinWrapperSx: SxProps = {
+    width: "100%",
+    margin: "0 25px",
+    paddingBottom: "40px",
+    maxWidth: "780px",
+  };
+
+  const underlineSx: SxProps = {
+    background: "#000000",
+    height: "1px",
+    margin: "-5px 0 40px",
+  };
+
+  const picksSx: SxProps = {
+    display: "flex",
+    alignItems: "center",
+    gap: "40px",
+  };
+
+  const cardSx: SxProps = {
+    height: "220px",
+    width: "220px",
+    display: "flex",
+    alignItems: "center",
+    flexDirection: "column",
+    transition: "transform 0.2s ease",
+    cursor: "pointer",
+    "&:hover": {
+      borderRadius: "3px",
+      transform: "scale(1.1)",
+      boxShadow: "0px 3px 3px rgba(0,0,0, 0.23)",
+    },
+  };
+
   return (
     <div>
       <Box sx={delrinZone}>
@@ -105,40 +146,5 @@ function DelrinPicks() {
     </div>
   );
 }
-
-// CSS ----------------------------------------------
-
-const delrinZone: SxProps = {
-  display: "flex",
-  justifyContent: "center",
-};
-
-const delrinWrapperSx: SxProps = {
-  width: "100%",
-  margin: "0 25px",
-  paddingBottom: "40px",
-  maxWidth: "780px",
-};
-
-const underlineSx: SxProps = {
-  background: "#000000",
-  height: "1px",
-  margin: "-5px 0 40px",
-};
-
-const picksSx: SxProps = {
-  display: "flex",
-  alignItems: "center",
-  gap: "40px",
-};
-
-// TODO: Add hover effect on card - getting bigger with shadow
-const cardSx: SxProps = {
-  height: "220px",
-  width: "220px",
-  display: "flex",
-  alignItems: "center",
-  flexDirection: "column",
-};
 
 export default DelrinPicks;

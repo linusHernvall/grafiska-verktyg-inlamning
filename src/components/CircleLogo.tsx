@@ -1,6 +1,15 @@
 import { Box, SxProps } from "@mui/material";
 
 function CircleLogo() {
+  // CSS ----------------------------------------------
+
+  const logoSx: SxProps = {
+    padding: "20px 0",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  };
+
   return (
     <div>
       <Box sx={logoSx}>
@@ -9,14 +18,5 @@ function CircleLogo() {
     </div>
   );
 }
-
-// CSS ----------------------------------------------
-
-const logoSx: SxProps = {
-  padding: "20px 0",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-};
 
 export default CircleLogo;

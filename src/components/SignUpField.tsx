@@ -11,6 +11,16 @@ function SignUpField() {
   const theme = useTheme();
   const isWideScreen = useMediaQuery(theme.breakpoints.up("md"));
 
+  // CSS ----------------------------------------------
+
+  const inputWrapperSx: SxProps = {
+    marginTop: "5px",
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    minWidth: "380px",
+  };
+
   return (
     <div>
       <Box sx={inputWrapperSx}>
@@ -34,15 +44,5 @@ function SignUpField() {
     </div>
   );
 }
-
-// CSS ----------------------------------------------
-
-const inputWrapperSx: SxProps = {
-  marginTop: "5px",
-  display: "flex",
-  flexDirection: "row",
-  justifyContent: "space-between",
-  minWidth: "380px",
-};
 
 export default SignUpField;

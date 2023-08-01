@@ -4,6 +4,17 @@ function Hero() {
   const theme = createTheme();
   const isWideScreen = useMediaQuery(theme.breakpoints.up("xl"));
 
+  // CSS ----------------------------------------------
+
+  const heroImgSx: SxProps = {
+    marginTop: "80px",
+    height: "400px",
+    maxHeight: "400px",
+    overflow: "hidden",
+    display: "flex",
+    alignItems: "center",
+  };
+
   return (
     <div>
       <Box sx={heroImgSx}>
@@ -20,16 +31,5 @@ function Hero() {
     </div>
   );
 }
-
-// CSS ----------------------------------------------
-
-const heroImgSx: SxProps = {
-  marginTop: "80px",
-  height: "400px",
-  maxHeight: "400px",
-  overflow: "hidden",
-  display: "flex",
-  alignItems: "center",
-};
 
 export default Hero;

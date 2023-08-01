@@ -2,6 +2,21 @@ import { Box, SxProps, Typography } from "@mui/material";
 import InputField from "./InputField";
 
 function ContactForm() {
+  // CSS ----------------------------------------------
+
+  const contactZoneSx: SxProps = {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+  };
+
+  const contactWrapperSx: SxProps = {
+    width: "100%",
+    maxWidth: "780px",
+    margin: "0 25px",
+  };
+
   return (
     <div>
       <Box sx={contactZoneSx}>
@@ -15,20 +30,5 @@ function ContactForm() {
     </div>
   );
 }
-
-// CSS ----------------------------------------------
-
-const contactZoneSx: SxProps = {
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-  alignItems: "center",
-};
-
-const contactWrapperSx: SxProps = {
-  width: "100%",
-  maxWidth: "780px",
-  margin: "0 25px",
-};
 
 export default ContactForm;

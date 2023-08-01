@@ -1,6 +1,23 @@
 import { Box, SxProps, Typography } from "@mui/material";
 
 function Description() {
+  // CSS ----------------------------------------------
+
+  const textWrapperSx: SxProps = {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    marginBottom: "20px",
+  };
+
+  const textSx: SxProps = {
+    maxWidth: "440px",
+    display: "flex",
+    flexDirection: "column",
+    gap: "15px",
+    alignItems: "center",
+    justifyContent: "center",
+  };
   return (
     <div>
       <Box sx={textWrapperSx}>
@@ -16,23 +33,5 @@ function Description() {
     </div>
   );
 }
-
-// CSS ----------------------------------------------
-
-const textWrapperSx: SxProps = {
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  marginBottom: "20px",
-};
-
-const textSx: SxProps = {
-  maxWidth: "440px",
-  display: "flex",
-  flexDirection: "column",
-  gap: "15px",
-  alignItems: "center",
-  justifyContent: "center",
-};
 
 export default Description;
