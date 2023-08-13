@@ -27,7 +27,6 @@ export default function InputField() {
 
   const messageSx: SxProps = {
     margin: "0 0 20px",
-    width: "590px",
   };
 
   return (
@@ -76,7 +75,7 @@ export default function InputField() {
             minHeight: "220px",
             textAlign: "left",
           },
-          width: isWideScreen ? "780px" : "590px",
+          width: isWideScreen ? "780px" : "100%",
         }}
         id="outlined-basic"
         variant="outlined"

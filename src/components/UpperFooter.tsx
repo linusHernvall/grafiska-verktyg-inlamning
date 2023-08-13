@@ -1,6 +1,9 @@
-import { Box, SxProps } from "@mui/material";
+import { Box, SxProps, useMediaQuery, useTheme } from "@mui/material";
 
 function UpperFooter() {
+  const theme = useTheme();
+  const isWideScreen = useMediaQuery(theme.breakpoints.down("sm"));
+
   // CSS ----------------------------------------------
 
   const upperFooterWrapperSx: SxProps = {
@@ -19,7 +22,12 @@ function UpperFooter() {
       <Box sx={topShadowSx} />
       <Box sx={upperFooterWrapperSx}>
         <img
-          src="../../images/lh-logotype.png"
+          src={
+            isWideScreen
+              ? "../../images/lh-logotype-small.png"
+              : "../../images/lh-logotype.png"
+          }
+          // src="../../images/lh-logotype.png"
           alt="LH Custom Picks logotype"
         />
       </Box>
