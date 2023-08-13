@@ -27,7 +27,6 @@ function UpperFooter() {
               ? "../../images/lh-logotype-small.png"
               : "../../images/lh-logotype.png"
           }
-          // src="../../images/lh-logotype.png"
           alt="LH Custom Picks logotype"
         />
       </Box>

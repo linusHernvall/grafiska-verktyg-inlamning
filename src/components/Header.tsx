@@ -1,10 +1,11 @@
 import MenuIcon from "@mui/icons-material/Menu";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import { Box, SxProps, useTheme } from "@mui/material";
+import { Box, SxProps, useMediaQuery, useTheme } from "@mui/material";
 
 function Header() {
-  // CSS ----------------------------------------------
   const theme = useTheme();
+  const isWideScreen = useMediaQuery(theme.breakpoints.down("sm"));
+  // CSS ----------------------------------------------
 
   const headerZoneSx: SxProps = {
     height: "80px",
@@ -31,7 +32,7 @@ function Header() {
   };
 
   const cartSx: SxProps = {
-    marginRight: "40px",
+    // marginRight: "40px",
     cursor: "pointer",
     transition: "transform 0.2s ease",
     "&:hover": {
@@ -54,11 +55,20 @@ function Header() {
       <Box sx={headerZoneSx}>
         <Box sx={headerWrapperSx}>
           <Box>
-            <img src="../../images/lhcp-textlogo.png" alt="A text logotype" />
+            <img
+              src={
+                isWideScreen
+                  ? "../../images/lhcp-textlogo-small.png"
+                  : "../../images/lhcp-textlogo.png"
+              }
+              alt="A text logotype"
+            />
           </Box>
 
           <Box sx={{ display: "flex", marginLeft: "auto" }}>
-            <Box sx={cartSx}>
+            <Box
+              sx={{ ...cartSx, marginRight: isWideScreen ? "20px" : "40px" }}
+            >
               <ShoppingCartIcon />
             </Box>
 
